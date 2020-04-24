@@ -4,6 +4,7 @@
 target 'TwitterReporteriOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
 
   # Pods for TwitterReporteriOS
 
@@ -16,4 +17,10 @@ target 'TwitterReporteriOS' do
     # Pods for testing
   end
 
+end
+
+
+target 'OneSignalNotificationServiceExtension' do
+  use_frameworks!
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
 end
