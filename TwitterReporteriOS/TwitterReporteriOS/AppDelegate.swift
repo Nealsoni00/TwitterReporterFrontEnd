@@ -12,16 +12,7 @@ import OneSignal
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        initializeOneSignal(launchOptions: launchOptions)
-        return true
-    }
-    
-    func initializeOneSignal(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
 
         // Replace 'YOUR_APP_ID' with your OneSignal App ID.
@@ -38,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("User accepted notifications: \(accepted)")
         })
         */
+        return true
     }
-    
 
     // MARK: UISceneSession Lifecycle
 
