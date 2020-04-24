@@ -17,6 +17,8 @@
 		36521E652452682500CB6C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521E632452682500CB6C00 /* LaunchScreen.storyboard */; };
 		36521E702452682600CB6C00 /* TwitterReporteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521E6F2452682600CB6C00 /* TwitterReporteriOSTests.swift */; };
 		36521E7B2452682600CB6C00 /* TwitterReporteriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521E7A2452682600CB6C00 /* TwitterReporteriOSUITests.swift */; };
+		36521E9B2452690300CB6C00 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521E9A2452690300CB6C00 /* NotificationService.swift */; };
+		36521E9F2452690300CB6C00 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36521E982452690300CB6C00 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		802F0069859EF34417464A60 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE8B1955A497206CBF89416 /* Pods_TwitterReporteriOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +37,28 @@
 			remoteGlobalIDString = 36521E542452682100CB6C00;
 			remoteInfo = TwitterReporteriOS;
 		};
+		36521E9D2452690300CB6C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36521E4D2452682100CB6C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36521E972452690300CB6C00;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36521EA02452690300CB6C00 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36521E9F2452690300CB6C00 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		10056128B0C2FE10D148FD22 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +77,9 @@
 		36521E762452682600CB6C00 /* TwitterReporteriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterReporteriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36521E7A2452682600CB6C00 /* TwitterReporteriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterReporteriOSUITests.swift; sourceTree = "<group>"; };
 		36521E7C2452682600CB6C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36521E982452690300CB6C00 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36521E9A2452690300CB6C00 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		36521E9C2452690300CB6C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BBC86F4F7F722A833528C7F /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		7EE8B1955A497206CBF89416 /* Pods_TwitterReporteriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterReporteriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8859A5E29A63A4E02EC19ABF /* Pods_TwitterReporteriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterReporteriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +114,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36521E952452690300CB6C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +130,7 @@
 				36521E572452682100CB6C00 /* TwitterReporteriOS */,
 				36521E6E2452682600CB6C00 /* TwitterReporteriOSTests */,
 				36521E792452682600CB6C00 /* TwitterReporteriOSUITests */,
+				36521E992452690300CB6C00 /* OneSignalNotificationServiceExtension */,
 				36521E562452682100CB6C00 /* Products */,
 				A265B27DBD852F943611BDE6 /* Pods */,
 				BCC1C2C9692769946D649D53 /* Frameworks */,
@@ -109,6 +143,7 @@
 				36521E552452682100CB6C00 /* TwitterReporteriOS.app */,
 				36521E6B2452682600CB6C00 /* TwitterReporteriOSTests.xctest */,
 				36521E762452682600CB6C00 /* TwitterReporteriOSUITests.xctest */,
+				36521E982452690300CB6C00 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +188,15 @@
 			path = TwitterReporteriOSUITests;
 			sourceTree = "<group>";
 		};
+		36521E992452690300CB6C00 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				36521E9A2452690300CB6C00 /* NotificationService.swift */,
+				36521E9C2452690300CB6C00 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		A265B27DBD852F943611BDE6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +207,6 @@
 				2E2FE5654812D2C48589A88C /* Pods-TwitterReporteriOSTests.debug.xcconfig */,
 				BBBE6FE8C281090F8C55680A /* Pods-TwitterReporteriOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,10 +231,12 @@
 				36521E512452682100CB6C00 /* Sources */,
 				36521E522452682100CB6C00 /* Frameworks */,
 				36521E532452682100CB6C00 /* Resources */,
+				36521EA02452690300CB6C00 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				36521E9E2452690300CB6C00 /* PBXTargetDependency */,
 			);
 			name = TwitterReporteriOS;
 			productName = TwitterReporteriOS;
@@ -236,6 +281,23 @@
 			productReference = 36521E762452682600CB6C00 /* TwitterReporteriOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		36521E972452690300CB6C00 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36521EA32452690300CB6C00 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				36521E942452690300CB6C00 /* Sources */,
+				36521E952452690300CB6C00 /* Frameworks */,
+				36521E962452690300CB6C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 36521E982452690300CB6C00 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +319,9 @@
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 36521E542452682100CB6C00;
 					};
+					36521E972452690300CB6C00 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 36521E502452682100CB6C00 /* Build configuration list for PBXProject "TwitterReporteriOS" */;
@@ -275,6 +340,7 @@
 				36521E542452682100CB6C00 /* TwitterReporteriOS */,
 				36521E6A2452682600CB6C00 /* TwitterReporteriOSTests */,
 				36521E752452682600CB6C00 /* TwitterReporteriOSUITests */,
+				36521E972452690300CB6C00 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +364,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		36521E742452682600CB6C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36521E962452690300CB6C00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,6 +475,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36521E942452690300CB6C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36521E9B2452690300CB6C00 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -414,6 +495,11 @@
 			isa = PBXTargetDependency;
 			target = 36521E542452682100CB6C00 /* TwitterReporteriOS */;
 			targetProxy = 36521E772452682600CB6C00 /* PBXContainerItemProxy */;
+		};
+		36521E9E2452690300CB6C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36521E972452690300CB6C00 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 36521E9D2452690300CB6C00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4333003BAC5AE42E2A7926D /* Pods-TwitterReporteriOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TwitterReporteriOS/Preview Content\"";
@@ -568,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BBC86F4F7F722A833528C7F /* Pods-TwitterReporteriOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TwitterReporteriOS/Preview Content\"";
@@ -673,6 +761,46 @@
 			};
 			name = Release;
 		};
+		36521EA12452690300CB6C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7933NKJF62;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YaleUniversity.TwitterReporteriOS.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36521EA22452690300CB6C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7933NKJF62;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YaleUniversity.TwitterReporteriOS.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -708,6 +836,15 @@
 			buildConfigurations = (
 				36521E862452682600CB6C00 /* Debug */,
 				36521E872452682600CB6C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36521EA32452690300CB6C00 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36521EA12452690300CB6C00 /* Debug */,
+				36521EA22452690300CB6C00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
