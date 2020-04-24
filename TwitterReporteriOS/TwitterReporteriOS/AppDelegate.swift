@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        initializeOneSignal(launchOptions: launchOptions)
         return true
     }
+    
+    func initializeOneSignal(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+
+        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(launchOptions,
+        appId: "cc83f141-5f54-43c6-b88a-2bba1c2cb078",
+        handleNotificationAction: nil,
+        settings: onesignalInitSettings)
+
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+
+        /*Use to prompt the device to subscribe
+        //Recommended to see step 6 for prompting
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+        print("User accepted notifications: \(accepted)")
+        })
+        */
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
