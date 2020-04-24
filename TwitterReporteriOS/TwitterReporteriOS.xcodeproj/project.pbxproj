@@ -189,15 +189,14 @@
 		36521EB12452970C00CB6C00 /* TwitterReporteriOS */ = {
 			isa = PBXGroup;
 			children = (
-				36521EF42452994E00CB6C00 /* TwitterReporteriOS.entitlements */,
 				36521EB22452970C00CB6C00 /* AppDelegate.swift */,
 				36521EF52452A3E100CB6C00 /* Icons */,
+				36521F162452B5D700CB6C00 /* Storyboards */,
+				36521F152452B5CE00CB6C00 /* Views */,
+				36521F142452B5C000CB6C00 /* Controllers */,
+				36521EF42452994E00CB6C00 /* TwitterReporteriOS.entitlements */,
 				36521EB42452970C00CB6C00 /* SceneDelegate.swift */,
-				36521EB62452970C00CB6C00 /* FirstViewController.swift */,
-				36521EB82452970C00CB6C00 /* SecondViewController.swift */,
-				36521EBA2452970C00CB6C00 /* Main.storyboard */,
 				36521EBD2452970F00CB6C00 /* Assets.xcassets */,
-				36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */,
 				36521EC22452970F00CB6C00 /* Info.plist */,
 			);
 			path = TwitterReporteriOS;
@@ -250,6 +249,31 @@
 				36521EF82452A40500CB6C00 /* tutorial.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		36521F142452B5C000CB6C00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36521EB62452970C00CB6C00 /* FirstViewController.swift */,
+				36521EB82452970C00CB6C00 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36521F152452B5CE00CB6C00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36521F162452B5D700CB6C00 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				36521EBA2452970C00CB6C00 /* Main.storyboard */,
+				36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		C136E4CE2C4908C4036B9B85 /* Pods */ = {
