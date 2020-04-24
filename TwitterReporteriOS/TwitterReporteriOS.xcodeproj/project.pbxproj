@@ -30,6 +30,9 @@
 		36521F0B2452A40600CB6C00 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521EFF2452A40500CB6C00 /* settings.png */; };
 		36521F0C2452A40600CB6C00 /* SettingsSmall@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F002452A40600CB6C00 /* SettingsSmall@3x.png */; };
 		36521F0D2452A40600CB6C00 /* SettingsSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F012452A40600CB6C00 /* SettingsSmall@2x.png */; };
+		36521F112452A8BD00CB6C00 /* retweet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F0E2452A8BD00CB6C00 /* retweet@2x.png */; };
+		36521F122452A8BD00CB6C00 /* heartFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */; };
+		36521F132452A8BD00CB6C00 /* heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F102452A8BD00CB6C00 /* heart@2x.png */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -109,6 +112,9 @@
 		36521EFF2452A40500CB6C00 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../settings.png; sourceTree = "<group>"; };
 		36521F002452A40600CB6C00 /* SettingsSmall@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SettingsSmall@3x.png"; path = "../../../SettingsSmall@3x.png"; sourceTree = "<group>"; };
 		36521F012452A40600CB6C00 /* SettingsSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SettingsSmall@2x.png"; path = "../../../SettingsSmall@2x.png"; sourceTree = "<group>"; };
+		36521F0E2452A8BD00CB6C00 /* retweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retweet@2x.png"; sourceTree = "<group>"; };
+		36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartFilled@2x.png"; sourceTree = "<group>"; };
+		36521F102452A8BD00CB6C00 /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart@2x.png"; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +233,9 @@
 		36521EF52452A3E100CB6C00 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				36521F102452A8BD00CB6C00 /* heart@2x.png */,
+				36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */,
+				36521F0E2452A8BD00CB6C00 /* retweet@2x.png */,
 				36521EF92452A40500CB6C00 /* logout.png */,
 				36521EFB2452A40500CB6C00 /* notification_filled@1x.png */,
 				36521EFE2452A40500CB6C00 /* notification_filled@2x.png */,
@@ -411,9 +420,12 @@
 				36521EBC2452970C00CB6C00 /* Main.storyboard in Resources */,
 				36521F042452A40600CB6C00 /* tutorial.png in Resources */,
 				36521F0D2452A40600CB6C00 /* SettingsSmall@2x.png in Resources */,
+				36521F112452A8BD00CB6C00 /* retweet@2x.png in Resources */,
 				36521F052452A40600CB6C00 /* logout.png in Resources */,
 				36521F0B2452A40600CB6C00 /* settings.png in Resources */,
 				36521F032452A40600CB6C00 /* privacy.png in Resources */,
+				36521F132452A8BD00CB6C00 /* heart@2x.png in Resources */,
+				36521F122452A8BD00CB6C00 /* heartFilled@2x.png in Resources */,
 				36521F022452A40600CB6C00 /* security.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
