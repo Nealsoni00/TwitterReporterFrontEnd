@@ -33,6 +33,10 @@
 		36521F112452A8BD00CB6C00 /* retweet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F0E2452A8BD00CB6C00 /* retweet@2x.png */; };
 		36521F122452A8BD00CB6C00 /* heartFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */; };
 		36521F132452A8BD00CB6C00 /* heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F102452A8BD00CB6C00 /* heart@2x.png */; };
+		36521F182452B63000CB6C00 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521F172452B63000CB6C00 /* TweetCell.swift */; };
+		36521F1C2452B67600CB6C00 /* TwitterBirdWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F192452B67600CB6C00 /* TwitterBirdWhite.png */; };
+		36521F1D2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F1A2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png */; };
+		36521F1E2452B67600CB6C00 /* TwitterBird.png in Resources */ = {isa = PBXBuildFile; fileRef = 36521F1B2452B67600CB6C00 /* TwitterBird.png */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -115,6 +119,10 @@
 		36521F0E2452A8BD00CB6C00 /* retweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retweet@2x.png"; sourceTree = "<group>"; };
 		36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartFilled@2x.png"; sourceTree = "<group>"; };
 		36521F102452A8BD00CB6C00 /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart@2x.png"; sourceTree = "<group>"; };
+		36521F172452B63000CB6C00 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		36521F192452B67600CB6C00 /* TwitterBirdWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterBirdWhite.png; path = ../../../Graphics/TwitterBirdWhite.png; sourceTree = "<group>"; };
+		36521F1A2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterBirdWhiteUnselected.png; path = ../../../Graphics/TwitterBirdWhiteUnselected.png; sourceTree = "<group>"; };
+		36521F1B2452B67600CB6C00 /* TwitterBird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterBird.png; path = ../../../Graphics/TwitterBird.png; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +240,9 @@
 		36521EF52452A3E100CB6C00 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				36521F1B2452B67600CB6C00 /* TwitterBird.png */,
+				36521F192452B67600CB6C00 /* TwitterBirdWhite.png */,
+				36521F1A2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png */,
 				36521F102452A8BD00CB6C00 /* heart@2x.png */,
 				36521F0F2452A8BD00CB6C00 /* heartFilled@2x.png */,
 				36521F0E2452A8BD00CB6C00 /* retweet@2x.png */,
@@ -263,6 +274,7 @@
 		36521F152452B5CE00CB6C00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36521F172452B63000CB6C00 /* TweetCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -440,8 +452,10 @@
 				36521EBE2452970F00CB6C00 /* Assets.xcassets in Resources */,
 				36521F092452A40600CB6C00 /* notifications.png in Resources */,
 				36521F0A2452A40600CB6C00 /* notification_filled@2x.png in Resources */,
+				36521F1C2452B67600CB6C00 /* TwitterBirdWhite.png in Resources */,
 				36521F082452A40600CB6C00 /* notification_filled@3x.png in Resources */,
 				36521EBC2452970C00CB6C00 /* Main.storyboard in Resources */,
+				36521F1E2452B67600CB6C00 /* TwitterBird.png in Resources */,
 				36521F042452A40600CB6C00 /* tutorial.png in Resources */,
 				36521F0D2452A40600CB6C00 /* SettingsSmall@2x.png in Resources */,
 				36521F112452A8BD00CB6C00 /* retweet@2x.png in Resources */,
@@ -450,6 +464,7 @@
 				36521F032452A40600CB6C00 /* privacy.png in Resources */,
 				36521F132452A8BD00CB6C00 /* heart@2x.png in Resources */,
 				36521F122452A8BD00CB6C00 /* heartFilled@2x.png in Resources */,
+				36521F1D2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png in Resources */,
 				36521F022452A40600CB6C00 /* security.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +590,7 @@
 			files = (
 				36521EB92452970C00CB6C00 /* SecondViewController.swift in Sources */,
 				36521EB72452970C00CB6C00 /* FirstViewController.swift in Sources */,
+				36521F182452B63000CB6C00 /* TweetCell.swift in Sources */,
 				36521EB32452970C00CB6C00 /* AppDelegate.swift in Sources */,
 				36521EB52452970C00CB6C00 /* SceneDelegate.swift in Sources */,
 			);
