@@ -26,7 +26,9 @@ extension TwitterReporterAPI: TargetType {
     }
     
     var baseURL: URL {
-        guard URL(string: enviormentBaseURL) != nil else { fatalError("base URL could not be determined")}
+        guard let url = URL(string: enviormentBaseURL) else { fatalError("base URL could not be determined")
+        }
+        return url
     }
     
     var path: String {
