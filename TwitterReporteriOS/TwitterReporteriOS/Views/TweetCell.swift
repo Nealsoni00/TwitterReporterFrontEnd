@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TweetCell: UITableViewCell {
 
@@ -29,6 +30,9 @@ class TweetCell: UITableViewCell {
     }
     
     func initialize(tweet: Tweet) {
-        self.profileImage.image. = tweet.profileImageURL
+        self.profileImage.kf.indicatorType = .activity
+        self.profileImage.kf.setImage(with: URL(string: tweet.profileImageURL), placeholder: nil, options: nil, progressBlock: nil) { result in
+            print("successfully set image using king fisher hashing")
+        }
     }
 }
