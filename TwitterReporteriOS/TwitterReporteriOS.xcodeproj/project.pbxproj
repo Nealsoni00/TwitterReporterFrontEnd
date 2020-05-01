@@ -11,7 +11,7 @@
 		36521EB52452970C00CB6C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521EB42452970C00CB6C00 /* SceneDelegate.swift */; };
 		36521EB72452970C00CB6C00 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521EB62452970C00CB6C00 /* FirstViewController.swift */; };
 		36521EB92452970C00CB6C00 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521EB82452970C00CB6C00 /* SecondViewController.swift */; };
-		36521EBC2452970C00CB6C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBA2452970C00CB6C00 /* Main.storyboard */; };
+		36521EBC2452970C00CB6C00 /* MainOld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBA2452970C00CB6C00 /* MainOld.storyboard */; };
 		36521EBE2452970F00CB6C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBD2452970F00CB6C00 /* Assets.xcassets */; };
 		36521EC12452970F00CB6C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */; };
 		36521ECC2452970F00CB6C00 /* TwitterReporteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36521ECB2452970F00CB6C00 /* TwitterReporteriOSTests.swift */; };
@@ -55,6 +55,9 @@
 		36812523245BC02500306E65 /* AppStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36812522245BC02500306E65 /* AppStoryboards.swift */; };
 		36812525245BC0CA00306E65 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36812524245BC0CA00306E65 /* MainTabController.swift */; };
 		36812526245BC34800306E65 /* faketweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 368124F4245BA4B500306E65 /* faketweets.json */; };
+		36ABC5C1245BCF8B00BBF518 /* MainOld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBA2452970C00CB6C00 /* MainOld.storyboard */; };
+		36ABC5C2245BCF8B00BBF518 /* MainOld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36521EBA2452970C00CB6C00 /* MainOld.storyboard */; };
+		36ABC5C4245BD57A00BBF518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36ABC5C3245BD57A00BBF518 /* Main.storyboard */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -108,7 +111,7 @@
 		36521EB42452970C00CB6C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36521EB62452970C00CB6C00 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		36521EB82452970C00CB6C00 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		36521EBB2452970C00CB6C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36521EBB2452970C00CB6C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainOld.storyboard; sourceTree = "<group>"; };
 		36521EBD2452970F00CB6C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36521EC02452970F00CB6C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36521EC22452970F00CB6C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 		3681250D245BBE5600306E65 /* notification_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notification_filled@2x.png"; path = "../../../Graphics/notification_filled@2x.png"; sourceTree = "<group>"; };
 		36812522245BC02500306E65 /* AppStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboards.swift; sourceTree = "<group>"; };
 		36812524245BC0CA00306E65 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		36ABC5C3245BD57A00BBF518 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,9 +335,10 @@
 		36521F162452B5D700CB6C00 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				36521EBA2452970C00CB6C00 /* Main.storyboard */,
+				36521EBA2452970C00CB6C00 /* MainOld.storyboard */,
 				36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */,
 				36812522245BC02500306E65 /* AppStoryboards.swift */,
+				36ABC5C3245BD57A00BBF518 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -540,7 +545,7 @@
 				36521F1C2452B67600CB6C00 /* TwitterBirdWhite.png in Resources */,
 				36812512245BBE5600306E65 /* settings.png in Resources */,
 				36812526245BC34800306E65 /* faketweets.json in Resources */,
-				36521EBC2452970C00CB6C00 /* Main.storyboard in Resources */,
+				36521EBC2452970C00CB6C00 /* MainOld.storyboard in Resources */,
 				36521F1E2452B67600CB6C00 /* TwitterBird.png in Resources */,
 				36812514245BBE5600306E65 /* SettingsSmall@3x.png in Resources */,
 				36812516245BBE5600306E65 /* TwitterBirdWhiteUnselected.png in Resources */,
@@ -554,6 +559,7 @@
 				36521F1D2452B67600CB6C00 /* TwitterBirdWhiteUnselected.png in Resources */,
 				36812511245BBE5600306E65 /* users.png in Resources */,
 				3681251E245BBE5600306E65 /* notifications.png in Resources */,
+				36ABC5C4245BD57A00BBF518 /* Main.storyboard in Resources */,
 				36812520245BBE5600306E65 /* security.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36ABC5C1245BCF8B00BBF518 /* MainOld.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36ABC5C2245BCF8B00BBF518 /* MainOld.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,12 +781,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		36521EBA2452970C00CB6C00 /* Main.storyboard */ = {
+		36521EBA2452970C00CB6C00 /* MainOld.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				36521EBB2452970C00CB6C00 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainOld.storyboard;
 			sourceTree = "<group>";
 		};
 		36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */ = {

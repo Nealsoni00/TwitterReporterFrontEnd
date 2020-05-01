@@ -27,11 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Initialize the network manager for dependency injection
         
-        let provider = NetworkManager()
-        let appStartVC = TweetsVC(networkProvider: provider)
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = appStartVC
-        self.window?.makeKeyAndVisible()
+//        let provider = NetworkManager()
+//        let appStartVC = TweetsVC(networkProvider: provider)
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window?.rootViewController = appStartVC
+//        self.window?.makeKeyAndVisible()
         
         /*Use to prompt the device to subscribe
         //Recommended to see step 6 for prompting

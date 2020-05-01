@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OneSignalNotificationServiceExtension.xcscheme_^#shared#^_</key>
+		<key>TabTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>TwitterReporteriOS.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 </dict>
