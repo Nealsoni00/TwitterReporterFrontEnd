@@ -9,9 +9,6 @@
 import Foundation
 import Moya
 // Protocol used for network manager injection into a view controller to test functionality with fake manager and data.
-protocol Networkable {
-//    var networkProvider: NetworkManager! { get set }
-}
 
 enum TwitterReporterAPI {
     case getTweets

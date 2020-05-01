@@ -12,17 +12,27 @@ import OneSignal
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
 
-        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
+        // OneSignal App Initialization and connections to Notification Service.
         OneSignal.initWithLaunchOptions(launchOptions,
         appId: "cc83f141-5f54-43c6-b88a-2bba1c2cb078",
         handleNotificationAction: nil,
         settings: onesignalInitSettings)
 
         OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
-
+        
+        // Initialize the network manager for dependency injection
+        
+        let provider = NetworkManager()
+        let appStartVC = TweetsVC(networkProvider: provider)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = appStartVC
+        self.window?.makeKeyAndVisible()
+        
         /*Use to prompt the device to subscribe
         //Recommended to see step 6 for prompting
         OneSignal.promptForPushNotifications(userResponse: { accepted in

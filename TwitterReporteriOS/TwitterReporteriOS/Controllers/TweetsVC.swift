@@ -10,13 +10,25 @@ import UIKit
 
 class TweetsVC: UITableViewController {
 
+    var networkProvider: Networkable!
+    init(networkProvider: Networkable) {
+        super.init(nibName: nil, bundle: nil)
+        self.networkProvider = networkProvider
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var tweets = [Tweet]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Load fake data
-        
-        
+        networkProvider.getTweets() { tweets in
+            self.tweets = tweets
+            print(tweets)
+        }
     }
 
     // MARK: - Table view data source

@@ -14,7 +14,15 @@ enum Environment {
     case Staging
     case Production
 }
-class NetworkManager: NSObject {
+
+protocol Networkable {
+    var provider: MoyaProvider<TwitterReporterAPI> { get }
+    func getTweets(completion: @escaping ([Tweet])->())
+//    var networkProvider: NetworkManager! { get set }
+}
+
+
+class NetworkManager: Networkable {
     static let environment: Environment = .Production
     static let TwitterReporterAPIKey = "APIKEY"
     var provider = MoyaProvider<TwitterReporterAPI>(plugins: [NetworkLoggerPlugin()])
