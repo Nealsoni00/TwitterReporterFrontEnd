@@ -25,7 +25,7 @@ protocol Networkable {
 class NetworkManager: Networkable {
     static let environment: Environment = .Production
     static let TwitterReporterAPIKey = "APIKEY"
-    var provider = MoyaProvider<TwitterReporterAPI>(plugins: [NetworkLoggerPlugin()])
+    var provider = MoyaProvider<TwitterReporterAPI>(stubClosure: MoyaProvider.immediatelyStub, plugins: [NetworkLoggerPlugin()])
     
     func getTweets(completion: @escaping ([Tweet])->()) {
         provider.request(.getTweets) { result in

@@ -17,7 +17,9 @@ class TweetsVC: UITableViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(nibName: nil, bundle: nil)
+        let provider = NetworkManager()
+        self.networkProvider = provider
     }
     
     var tweets = [Tweet]()

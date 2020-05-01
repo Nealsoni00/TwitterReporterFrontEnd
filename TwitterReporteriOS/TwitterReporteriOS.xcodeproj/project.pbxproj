@@ -52,6 +52,9 @@
 		3681251F245BBE5600306E65 /* SettingsSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3681250B245BBE5600306E65 /* SettingsSmall@2x.png */; };
 		36812520245BBE5600306E65 /* security.png in Resources */ = {isa = PBXBuildFile; fileRef = 3681250C245BBE5600306E65 /* security.png */; };
 		36812521245BBE5600306E65 /* notification_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3681250D245BBE5600306E65 /* notification_filled@2x.png */; };
+		36812523245BC02500306E65 /* AppStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36812522245BC02500306E65 /* AppStoryboards.swift */; };
+		36812525245BC0CA00306E65 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36812524245BC0CA00306E65 /* MainTabController.swift */; };
+		36812526245BC34800306E65 /* faketweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 368124F4245BA4B500306E65 /* faketweets.json */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -154,6 +157,8 @@
 		3681250B245BBE5600306E65 /* SettingsSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SettingsSmall@2x.png"; path = "../../../Graphics/SettingsSmall@2x.png"; sourceTree = "<group>"; };
 		3681250C245BBE5600306E65 /* security.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = security.png; path = ../../../Graphics/security.png; sourceTree = "<group>"; };
 		3681250D245BBE5600306E65 /* notification_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notification_filled@2x.png"; path = "../../../Graphics/notification_filled@2x.png"; sourceTree = "<group>"; };
+		36812522245BC02500306E65 /* AppStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboards.swift; sourceTree = "<group>"; };
+		36812524245BC0CA00306E65 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,6 +313,7 @@
 				36521EB62452970C00CB6C00 /* FirstViewController.swift */,
 				36521EB82452970C00CB6C00 /* SecondViewController.swift */,
 				368124ED245B9F7000306E65 /* TweetsVC.swift */,
+				36812524245BC0CA00306E65 /* MainTabController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			children = (
 				36521EBA2452970C00CB6C00 /* Main.storyboard */,
 				36521EBF2452970F00CB6C00 /* LaunchScreen.storyboard */,
+				36812522245BC02500306E65 /* AppStoryboards.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -532,6 +539,7 @@
 				3681250E245BBE5600306E65 /* logout.png in Resources */,
 				36521F1C2452B67600CB6C00 /* TwitterBirdWhite.png in Resources */,
 				36812512245BBE5600306E65 /* settings.png in Resources */,
+				36812526245BC34800306E65 /* faketweets.json in Resources */,
 				36521EBC2452970C00CB6C00 /* Main.storyboard in Resources */,
 				36521F1E2452B67600CB6C00 /* TwitterBird.png in Resources */,
 				36812514245BBE5600306E65 /* SettingsSmall@3x.png in Resources */,
@@ -705,6 +713,7 @@
 			files = (
 				368124F9245BABC100306E65 /* NetworkManager.swift in Sources */,
 				36521EB92452970C00CB6C00 /* SecondViewController.swift in Sources */,
+				36812525245BC0CA00306E65 /* MainTabController.swift in Sources */,
 				368124F7245BA7A900306E65 /* TwitterReporterAPI.swift in Sources */,
 				368124E9245B9E6100306E65 /* TweetTagsCollectionView.swift in Sources */,
 				36521EB72452970C00CB6C00 /* FirstViewController.swift in Sources */,
@@ -712,6 +721,7 @@
 				36521F182452B63000CB6C00 /* TweetCell.swift in Sources */,
 				368124F3245BA45800306E65 /* SampleData.swift in Sources */,
 				368124EB245B9E7400306E65 /* TweetTagCell.swift in Sources */,
+				36812523245BC02500306E65 /* AppStoryboards.swift in Sources */,
 				36521EB32452970C00CB6C00 /* AppDelegate.swift in Sources */,
 				368124EE245B9F7000306E65 /* TweetsVC.swift in Sources */,
 				36521EB52452970C00CB6C00 /* SceneDelegate.swift in Sources */,

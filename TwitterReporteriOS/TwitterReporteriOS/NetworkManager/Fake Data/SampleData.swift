@@ -9,7 +9,7 @@
 import Foundation
 
 func getFakeData() -> Data {
-    return stubbedResponse("fakeData")
+    return stubbedResponse("faketweets")
 }
 
 // MARK: - Provider support
