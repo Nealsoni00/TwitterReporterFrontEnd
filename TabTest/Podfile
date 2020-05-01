@@ -21,8 +21,3 @@ target 'TabTest' do
   end
 
 end
-
-target 'OneSignalNotificationServiceExtension' do
-  use_frameworks!
-  pod 'OneSignal', '>= 2.11.2', '< 3.0'
-end

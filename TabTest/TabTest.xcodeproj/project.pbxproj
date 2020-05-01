@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		36ABC5D8245BD64200BBF518 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC5D7245BD64200BBF518 /* SecondViewController.swift */; };
 		36ABC5DB245BD64200BBF518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36ABC5D9245BD64200BBF518 /* Main.storyboard */; };
 		36ABC5DD245BD64500BBF518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36ABC5DC245BD64500BBF518 /* Assets.xcassets */; };
-		36ABC5E0245BD64500BBF518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36ABC5DE245BD64500BBF518 /* LaunchScreen.storyboard */; };
 		36ABC5EB245BD64500BBF518 /* TabTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC5EA245BD64500BBF518 /* TabTestTests.swift */; };
 		36ABC5F6245BD64500BBF518 /* TabTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC5F5245BD64500BBF518 /* TabTestUITests.swift */; };
 		36ABC604245BD67000BBF518 /* TweetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC603245BD67000BBF518 /* TweetsVC.swift */; };
@@ -85,7 +84,6 @@
 		36ABC5D7245BD64200BBF518 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		36ABC5DA245BD64200BBF518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36ABC5DC245BD64500BBF518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36ABC5DF245BD64500BBF518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36ABC5E1245BD64500BBF518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36ABC5E6245BD64500BBF518 /* TabTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36ABC5EA245BD64500BBF518 /* TabTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTestTests.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				36ABC655245BD9AB00BBF518 /* Views */,
 				36ABC605245BD99000BBF518 /* Storyboards */,
 				36ABC5DC245BD64500BBF518 /* Assets.xcassets */,
-				36ABC5DE245BD64500BBF518 /* LaunchScreen.storyboard */,
 				36ABC5E1245BD64500BBF518 /* Info.plist */,
 				36ABC603245BD67000BBF518 /* TweetsVC.swift */,
 			);
@@ -335,7 +332,6 @@
 				52ED431C6B80A6F660D7CC22 /* Pods-TabTestTests.debug.xcconfig */,
 				72BAC954E3F1D0F1197F599B /* Pods-TabTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -360,6 +356,7 @@
 				36ABC5CA245BD64200BBF518 /* Sources */,
 				36ABC5CB245BD64200BBF518 /* Frameworks */,
 				36ABC5CC245BD64200BBF518 /* Resources */,
+				FA9C564E9BC2D9EB64828F1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,6 +394,7 @@
 				36ABC5ED245BD64500BBF518 /* Sources */,
 				36ABC5EE245BD64500BBF518 /* Frameworks */,
 				36ABC5EF245BD64500BBF518 /* Resources */,
+				76C6982B96151D1B20FB31FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -457,7 +455,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36ABC642245BD9A000BBF518 /* settings.png in Resources */,
-				36ABC5E0245BD64500BBF518 /* LaunchScreen.storyboard in Resources */,
 				36ABC651245BD9A000BBF518 /* notification_filled@1x.png in Resources */,
 				36ABC61B245BD99700BBF518 /* faketweets.json in Resources */,
 				36ABC654245BD9A000BBF518 /* TwitterBird.psd in Resources */,
@@ -505,6 +502,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		76C6982B96151D1B20FB31FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabTest-TabTestUITests/Pods-TabTest-TabTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabTest-TabTestUITests/Pods-TabTest-TabTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabTest-TabTestUITests/Pods-TabTest-TabTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9EAFB05767CCEEE27E406F60 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +583,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9C564E9BC2D9EB64828F1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabTest/Pods-TabTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabTest/Pods-TabTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabTest/Pods-TabTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -636,14 +667,6 @@
 				36ABC5DA245BD64200BBF518 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		36ABC5DE245BD64500BBF518 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36ABC5DF245BD64500BBF518 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		36ABC607245BD99000BBF518 /* LaunchScreen.storyboard */ = {

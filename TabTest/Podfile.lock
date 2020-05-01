@@ -1,3 +1,32 @@
-PODFILE CHECKSUM: 8409b638168512e5d4de00056f83cd70a068b707
+PODS:
+  - Alamofire (5.1.0)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - OneSignal (2.13.1)
+
+DEPENDENCIES:
+  - Kingfisher
+  - Moya (~> 14.0)
+  - OneSignal (< 3.0, >= 2.11.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Moya
+    - OneSignal
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
+
+PODFILE CHECKSUM: 94e9ece7acc98c17b7f13d30ac2dbf71b42540ce
 
 COCOAPODS: 1.8.4
