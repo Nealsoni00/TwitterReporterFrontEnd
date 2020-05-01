@@ -1,16 +1,22 @@
 PODS:
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
   - OneSignal (2.13.1)
 
 DEPENDENCIES:
+  - Kingfisher
   - OneSignal (< 3.0, >= 2.11.2)
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - OneSignal
 
 SPEC CHECKSUMS:
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
 
-PODFILE CHECKSUM: 3baef3356a9cc892dc2716ea09611e6912a8b1e0
+PODFILE CHECKSUM: 4043f6718a60a812a755423ddcbc15bece5a2967
 
 COCOAPODS: 1.8.4
