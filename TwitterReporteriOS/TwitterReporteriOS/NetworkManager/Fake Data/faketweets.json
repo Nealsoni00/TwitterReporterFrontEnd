@@ -1,23 +1,22 @@
-{
-    "tweets":
+
         [{
-            "profileImageURL" : "https://pbs.twimg.com/profile_images/1255961776035729408/0AjDFNaf_400x400.jpg",
-            "nameOfPerson" : "Elon Musk",
+            "profile_image_url" : "https://pbs.twimg.com/profile_images/1255961776035729408/0AjDFNaf_400x400.jpg",
+            "author" : "Elon Musk",
             "handle" : "@elonmusk",
             "time" : "1 min",
-            "textOfTweet" : "This is a fake tweet",
-            "likesCount" : "10",
-            "retweetCount" : "15",
+            "text_of_tweet" : "This is a fake tweet",
+            "likes_count" : "10",
+            "retweet_count" : "15",
             "tag" : "Elon",
         },
         {
-            "profileImageURL" : "https://pbs.twimg.com/profile_images/1255961776035729408/0AjDFNaf_400x400.jpg",
-            "nameOfPerson" : "Elon Musk",
+            "profile_image_url" : "https://pbs.twimg.com/profile_images/1255961776035729408/0AjDFNaf_400x400.jpg",
+            "author" : "Elon Musk",
             "handle" : "@elonmusk",
             "time" : "2 min",
-            "textOfTweet" : "This is a fake tweet #2",
-            "likesCount" : "10",
-            "retweetCount" : "15",
+            "text_of_tweet" : "This is a fake tweet #2",
+            "likes_count" : "10",
+            "retweet_count" : "15",
             "tag" : "Elon",
         }]
-        }
+        
