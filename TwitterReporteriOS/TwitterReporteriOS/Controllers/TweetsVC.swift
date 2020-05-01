@@ -9,6 +9,10 @@
 import UIKit
 
 class TweetsVC: UITableViewController {
+    @IBOutlet var activitySpinner: UIActivityIndicatorView!
+    
+    let refresher = UIRefreshControl()
+    var noTweetsView: UIView?
 
     var networkProvider: Networkable!
     init(networkProvider: Networkable) {
@@ -33,7 +37,28 @@ class TweetsVC: UITableViewController {
             self.tableView.reloadData()
         }
 //        self.tableView.register(TweetCell.self,  forCellReuseIdentifier: "tweetCell123")
+        // Add a pull-down refresher to the table to refresh announcements from backend
+        refresher.addTarget(self, action: #selector(shouldRefreshTweets), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+           tableView.refreshControl = refresher
+        } else {
+           tableView.addSubview(refresher)
+        }
+        initEmptyView()
 
+
+    }
+    
+    // Function triggered on refreshControl (when the user pulls down on the table view)
+    @objc func shouldRefreshTweets(_ sender: Any) {
+        networkProvider.getTweets() { tweets in
+            self.tweets = tweets
+            print(tweets)
+            self.tableView.reloadData()
+            if self.refresher.isRefreshing {
+                self.refresher.endRefreshing()
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -45,6 +70,7 @@ class TweetsVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        noTweetsView?.isHidden = (allNotifications.count > 0)
         return tweets.count
     }
 
@@ -56,6 +82,31 @@ class TweetsVC: UITableViewController {
         cell.initialize(tweet: tweets[indexPath.row])
 
         return cell
+    }
+    // Automatic row heights when there is extra data
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func initEmptyView() {
+        noTweetsView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        noTweetsView?.backgroundColor = UIColor.white
+        
+        let noActiveEmergenciesLabel = UILabel(frame: CGRect(x: 0, y: self.view.center.y - 100, width: self.view.frame.width, height: 100))
+        noActiveEmergenciesLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
+        noActiveEmergenciesLabel.numberOfLines = 1
+        noActiveEmergenciesLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        noActiveEmergenciesLabel.shadowColor = UIColor.lightText
+        noActiveEmergenciesLabel.textColor = UIColor.darkGray
+        noActiveEmergenciesLabel.shadowOffset = CGSize(width: 0, height: 1)
+        noActiveEmergenciesLabel.backgroundColor = UIColor.clear
+        noActiveEmergenciesLabel.textAlignment = NSTextAlignment.center
+        noActiveEmergenciesLabel.text = "No Notifications"
+        noTweetsView?.addSubview(noActiveEmergenciesLabel)
+        
+        noTweetsView?.isHidden = true
+        
+        self.tableView.insertSubview(noTweetsView!, belowSubview: self.tableView)
     }
     
 
