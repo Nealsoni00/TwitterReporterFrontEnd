@@ -43,6 +43,7 @@
 		368124F1245B9FA400306E65 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F0245B9FA400306E65 /* Tweet.swift */; };
 		368124F3245BA45800306E65 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F2245BA45800306E65 /* SampleData.swift */; };
 		368124F7245BA7A900306E65 /* TwitterReporterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F6245BA7A900306E65 /* TwitterReporterAPI.swift */; };
+		368124F9245BABC100306E65 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F8245BABC100306E65 /* NetworkManager.swift */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -136,6 +137,7 @@
 		368124F2245BA45800306E65 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		368124F4245BA4B500306E65 /* faketweets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faketweets.json; sourceTree = "<group>"; };
 		368124F6245BA7A900306E65 /* TwitterReporterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterReporterAPI.swift; sourceTree = "<group>"; };
+		368124F8245BABC100306E65 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +313,7 @@
 				368124EF245B9F9300306E65 /* NetworkModels */,
 				368124F5245BA69A00306E65 /* Fake Data */,
 				368124F6245BA7A900306E65 /* TwitterReporterAPI.swift */,
+				368124F8245BABC100306E65 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368124F9245BABC100306E65 /* NetworkManager.swift in Sources */,
 				36521EB92452970C00CB6C00 /* SecondViewController.swift in Sources */,
 				368124F7245BA7A900306E65 /* TwitterReporterAPI.swift in Sources */,
 				368124E9245B9E6100306E65 /* TweetTagsCollectionView.swift in Sources */,

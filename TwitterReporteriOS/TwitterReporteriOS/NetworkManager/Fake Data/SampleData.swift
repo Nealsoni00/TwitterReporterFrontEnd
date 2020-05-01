@@ -8,7 +8,7 @@
 
 import Foundation
 
-func getFakeData() {
+func getFakeData() -> Data {
     return stubbedResponse("fakeData")
 }
 
