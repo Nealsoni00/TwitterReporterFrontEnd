@@ -209,7 +209,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZK5-OO-Qt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="650"/>
+            <point key="canvasLocation" x="1678" y="-125"/>
         </scene>
         <!--Info-->
         <scene sceneID="bW3-dk-WDF">
@@ -758,7 +758,7 @@
                     </tableViewCellContentView>
                 </tableViewCell>
             </objects>
-            <point key="canvasLocation" x="907" y="650"/>
+            <point key="canvasLocation" x="2528" y="-125"/>
         </scene>
     </scenes>
     <resources>
