@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,7 @@
 		368124EB245B9E7400306E65 /* TweetTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124EA245B9E7400306E65 /* TweetTagCell.swift */; };
 		368124EE245B9F7000306E65 /* TweetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124ED245B9F7000306E65 /* TweetsVC.swift */; };
 		368124F1245B9FA400306E65 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F0245B9FA400306E65 /* Tweet.swift */; };
+		368124F3245BA45800306E65 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368124F2245BA45800306E65 /* SampleData.swift */; };
 		441F64DEE39056D96EE9E78D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		55AB0ECED81C528C1A64348E /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B562612E7C76DCA69110BA59 /* Pods_TwitterReporteriOS_TwitterReporteriOSUITests.framework */; };
 		807BFDFB6C1A8F3D32871194 /* Pods_TwitterReporteriOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05433F92AE414E79FD8B2899 /* Pods_TwitterReporteriOSTests.framework */; };
@@ -131,6 +132,8 @@
 		368124EA245B9E7400306E65 /* TweetTagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTagCell.swift; sourceTree = "<group>"; };
 		368124ED245B9F7000306E65 /* TweetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsVC.swift; sourceTree = "<group>"; };
 		368124F0245B9FA400306E65 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		368124F2245BA45800306E65 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		368124F4245BA4B500306E65 /* faketweets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faketweets.json; sourceTree = "<group>"; };
 		6899032081C7E4130A56C6D4 /* Pods-TwitterReporteriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterReporteriOS.release.xcconfig"; path = "Target Support Files/Pods-TwitterReporteriOS/Pods-TwitterReporteriOS.release.xcconfig"; sourceTree = "<group>"; };
 		69C479221A283E28A6413B33 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6B7EAA76C12A588591152814 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -304,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				368124EF245B9F9300306E65 /* NetworkModels */,
+				368124F5245BA69A00306E65 /* Fake Data */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -314,6 +318,15 @@
 				368124F0245B9FA400306E65 /* Tweet.swift */,
 			);
 			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		368124F5245BA69A00306E65 /* Fake Data */ = {
+			isa = PBXGroup;
+			children = (
+				368124F2245BA45800306E65 /* SampleData.swift */,
+				368124F4245BA4B500306E65 /* faketweets.json */,
+			);
+			path = "Fake Data";
 			sourceTree = "<group>";
 		};
 		C136E4CE2C4908C4036B9B85 /* Pods */ = {
@@ -657,6 +670,7 @@
 				36521EB72452970C00CB6C00 /* FirstViewController.swift in Sources */,
 				368124F1245B9FA400306E65 /* Tweet.swift in Sources */,
 				36521F182452B63000CB6C00 /* TweetCell.swift in Sources */,
+				368124F3245BA45800306E65 /* SampleData.swift in Sources */,
 				368124EB245B9E7400306E65 /* TweetTagCell.swift in Sources */,
 				36521EB32452970C00CB6C00 /* AppDelegate.swift in Sources */,
 				368124EE245B9F7000306E65 /* TweetsVC.swift in Sources */,

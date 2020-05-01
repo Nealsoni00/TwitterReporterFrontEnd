@@ -34,5 +34,11 @@ class TweetCell: UITableViewCell {
         self.profileImage.kf.setImage(with: URL(string: tweet.profileImageURL), placeholder: nil, options: nil, progressBlock: nil) { result in
             print("successfully set image using king fisher hashing")
         }
+        self.nameOfPerson.text = tweet.nameOfPerson
+        self.handleLabel.text = tweet.handle
+        self.timeLabel.text = tweet.time
+        self.textOfTweetLabel.text = tweet.textOfTweet
+        self.likesLabel.text = tweet.likesCount
+        self.retweetsLabel.text = tweet.retweetCount
     }
 }
