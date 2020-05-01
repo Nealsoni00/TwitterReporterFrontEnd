@@ -45,8 +45,7 @@ class TweetsVC: UITableViewController {
            tableView.addSubview(refresher)
         }
         initEmptyView()
-
-
+        
     }
     
     // Function triggered on refreshControl (when the user pulls down on the table view)
@@ -70,16 +69,18 @@ class TweetsVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        noTweetsView?.isHidden = (allNotifications.count > 0)
+        noTweetsView?.isHidden = (tweets.count > 0)
         return tweets.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("HERE!!!!")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TweetCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCell
+        
+//        let cell = TweetCell()
 
-        cell.initialize(tweet: tweets[indexPath.row])
+//        cell.initialize(tweet: tweets[indexPath.row])
 
         return cell
     }
